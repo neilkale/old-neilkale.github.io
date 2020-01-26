@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="myStyle.css">
+	<title>Book List</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+	<!-- Favicon Source:
+	https://openclipart.org/detail/22012/weather-symbols:-sun-by-nicubunu -->
+	<script src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery('#nav-placeholder').load("nav.html");
+		});
+	</script>
+</head>
+
+<body>
+
+	<div class=row>
+
+		<!-- Title -->
+
+		<div class=titlebox>
+
+			<p class=title>Books I Love: The List</p>
+
+			<p class="subtitle">Some are funny, some are informative, some are insightful.</p>
+
+			<p class="subtitle">All are worth reading!</p>
+
+		</div>
+
+	</div>
+
+	<div class=row>
+
+		<!-- The sidebar -->
+
+		<div id="nav-placeholder">
+
+		<div class=col-2></div>
+
+	</div>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				/*this.classList.toggle("active");*/
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
+
+</body>
+
+</html>

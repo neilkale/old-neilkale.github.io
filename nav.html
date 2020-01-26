@@ -1,0 +1,57 @@
+<!-- TODO: Add dynamic active tag -->
+
+<base href="file:///C:/Users/GAMES/eclipse-workspace/sunnysideup.life/WebContent/">
+<!-- <base href="http://www.sunnysideup.life/sunnysideup.life/"> -->
+
+<div class="col-1 sidebar">
+
+  <a href="index.html">Home</a>
+
+  <button class="accordion">Musings</button>
+  <div class="panel">
+    <a href="musings.html">About My Musings</a> <a href="writing/about_me_freshman.html">About Me: Freshman</a> <a href="writing/fly_mesh.html">One-Way Fly Mesh Design</a> <a href="writing/friends.html">Friends</a> <a
+      href="writing/library.html">Library</a> <a href="writing/organization.html">Organization</a> <a href="writing/pinnochio_horror.html">Pinnochio Horror</a> <a href="writing/tapestry.html">Tapestry</a>
+    <button class="accordion">Walden</button>
+    <div class="panel">
+      <a href="writing/walden/my_walden.html">My Walden</a> <a href="writing/walden/economy.html">1: Economy</a> <a href="writing/walden/WIL_and_WILF.html">2: WIL &amp; WILF</a> <a href="writing/walden/reading.html">3: Reading</a> <a
+        href="writing/walden/sounds.html">4: Sounds</a> <a href="writing/walden/solitude.html">5: Solitude</a> <a href="writing/walden/visitors.html">6: Visitors</a> <a href="writing/walden/bean-field.html">7: The Bean-Field</a> <a
+        href="writing/walden/village.html">8: The Village</a> <a href="writing/walden/higher_laws.html">11: Higher Laws</a> <a href="..writing/walden/brute_neighbors.html">12: Brute Neighbors</a>
+      <a href="writing/walden/house-warming.html">13: House-Warming</a> <a href="writing/walden/pond_in_winter.html">16: The Pond in
+        Winter</a> <a href="writing/walden/spring.html">17: Spring</a> <a href="writing/walden/conclusion.html">18: Conclusion</a> <a href="writing/walden/legacy1.html">Legacy of HDT 1</a> <a href="writing/walden/legacy2.html">Legacy
+        of HDT 2</a>
+      <a href="writing/walden/legacy3.html">Legacy of HDT 3</a> <a href="writing/walden/vocabulary_list.html">Vocabulary List</a>
+    </div>
+  </div>
+
+  <button class="accordion">Formal Writing</button>
+  <div class="panel">
+    <a href="formalWriting.html">About My Formal Writing</a><a href="writing/24_unplugged.html">24 Hours Unplugged</a> <a href="writing/data_breach.html">Data Breach at Genesis</a> <a href="writing/volunteerism.html">Impact of
+      Volunteerism</a> <a href="writing/on_religion.html">On Religion</a>
+    <a href="writing/integrity.html">Integrity: What Does It Look Like</a>
+  </div>
+
+  <button class="accordion">Books I Love</button>
+  <div class="panel">
+    <a href="book_list.html">The List</a> <a href="writing/summer_reading.html">Summer Reading #0</a> <a href="writing/summer_reading1.html">Summer Reading #1</a> <a href="writing/summer_reading2.html">Summer Reading #2</a>
+  </div>
+
+  <a href="http://users.wpi.edu/~nakale/">School Website</a> <a href="contact.html">Contact</a>
+
+</div>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      /*this.classList.toggle("active");*/
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
