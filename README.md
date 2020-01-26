@@ -1,2 +1,2 @@
 # neilkale.github.io
-Stuff for sunnysideup.life
+Using Github Pages to host sunnysideup.life
