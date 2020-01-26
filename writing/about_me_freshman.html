@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../myStyle.css">
+	<title>About Me: Freshman</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../images/favicon.png" sizes="16x16" type="image/png">
+	<!-- Favicon Source:
+	https://openclipart.org/detail/22012/weather-symbols:-sun-by-nicubunu -->
+	<script src="../js/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery('#nav-placeholder').load("../nav.html");
+		});
+	</script>
+</head>
+
+<body>
+
+	<div class=row>
+
+		<!-- Title -->
+
+		<div class=titlebox>
+
+			<p class=title>About Me: Freshman</p>
+
+			<p class="subtitle">2017</p>
+
+			<p class="subtitle"></p>
+
+		</div>
+
+	</div>
+
+	<div class=row>
+
+		<!-- The sidebar -->
+
+
+
+		<div class=col-2>
+
+			<p> This is the content of the "About" page on my first blog, a Wordpress site titled "Sweat and Soliloquy" located at 'neilkale.wordpress.com'. All content has been ported to Sunny Side Up now, but the old site remains as an internet relic -
+				forgotten, but never gone.</p>
+			<hr>
+			</hr>
+			<p>I'm currently a freshman in high school.<br /><br />My academic interests include astronomy, physics, ancient cultures, and mathematics. Though this may seem eclectic, I can say without a doubt that my dream profession has remained the same
+				since childhood - I will be the world's first ever astroarchaeologist.<br /><br />As Edward Teller once said, "The science of today is the technology of tomorrow." While purely scientific and mathematical discoveries have their place, the
+				true magic is in converting them into technology that improves quality of life, helps people, or furthers mankind.<br /><br />Outside of purely scholarly activities, I enjoy singing, reading, and public speaking. I am president of my class as
+				well as a social activist. As a human being, it is impossible for me to be wholly&nbsp;nonpartisan. Having said that, I try to see both sides of the card, and I hope this site will stay true to that.<br /><br />Sweat and Soliloquy is designed
+				to provide a record of my life as well as compile my written&nbsp;works&nbsp;-&nbsp;The former&nbsp;part&nbsp;being the sweat&nbsp;of&nbsp;everyday life, and&nbsp;the latter being the&nbsp;soliloquy that rambles on endlessly
+				within&nbsp;each&nbsp;of&nbsp;us. I hope that this site will be entertaining, insightful, or at least, unique, in its view of the world and portrayal of my life.<br /><br />Since you've read this far, it's probably safe to assume that you
+				have a vested interest in me or I've died a horrible highly-publicized death and this blog is suddenly famous.&nbsp;With that happy thought in mind, thanks for visiting, and I hope you enjoy your stay at Sweat and Soliloquy! If you like my
+				work, feel free to share it, just please attribute credit back to this site.
+			</p>
+		</div>
+
+	</div>
+	<div id="nav-placeholder">
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				/*this.classList.toggle("active");*/
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
+
+</body>
+
+</html>

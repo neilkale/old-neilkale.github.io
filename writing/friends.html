@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../myStyle.css">
+	<title>Friends</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../images/favicon.png" sizes="16x16" type="image/png">
+	<!-- Favicon Source:
+	https://openclipart.org/detail/22012/weather-symbols:-sun-by-nicubunu -->
+	<script src="../js/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('#nav-placeholder').load("../nav.html");
+		});
+	</script>
+</head>
+
+<body>
+
+	<div class=row>
+
+		<!-- Title -->
+
+		<div class=titlebox>
+
+			<p class=title>Friends</p>
+
+			<p class="subtitle">2018</p>
+
+			<p class="subtitle"></p>
+
+		</div>
+
+	</div>
+
+	<div class=row>
+
+		<!-- The sidebar -->
+
+
+
+		<div class=col-2>
+
+      <p>I wrote the piece below as I left the public school system and the friends I'd made there. I was sad, but I didn't want to cope by shutting myself off and turning away from the kids I'd grown up with. They're a diverse group, and I always imagined our time in school together like 1000 tangled threads, each coming from a different past, and each headed to a different future, just intertwined for this brief glorious journey. I wouldn't trade my experience here for a posh private school. I had to deal with some anti-intellectualism, but no more than anywhere else - despite how the media portrays public school. Moreover, I met some people who were really school-smart and some who were dense as stones when it came to tests, but I found good friends all throughout that spectrum. I came to realize that just because I'm good at something, and I'm passionate about that, doesn't mean that anyone who isn't is dumb or can't be my friend. I know, for a fact, that they're all really talented and passionate about&nbsp;something. As a good friend, I want the best for their future, so I push them to do well in school and take academics importantly. I also try to learn from them, and absorb their passions and interests. In that way, my friends become a part of me forever.</p>
+      <hr />
+      <p>I miss my friends. They haven't gone anywhere, but we're a million miles apart. To all the people I love. I haven't left you behind - I remember you, and I smile.</p>
+      <p>If the Greeks are to be believed, we are made of clay. Congratulations, my friend, you've created a masterpiece! Now, truthfully, we're all masterpieces shaped by those we love and admire, but I owe a special thanks to you. For I, am a terrible sculptor. If I've had any influence on you, I apologize. But you've lent me your strength and wisdom anyway. You've walked my path with me and cheered me on. Now, I keep walking my way. You keep walking yours. The road splits, life marches on. Just know, friend, that though our paths differ, you're with me just the same. You walked with me, and I'll always walk with you. For better or for worse, I'm your friend, and I'll always love you. Neil.</p>		</div>
+
+	</div>
+	<div id="nav-placeholder">
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				/*this.classList.toggle("active");*/
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
+
+</body>
+
+</html>
