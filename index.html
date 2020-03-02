@@ -2,7 +2,6 @@
 <html lang="en" class="page">
 
 <head>
-	<base href="https://neilkale.github.io/">
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="myStyle.css">
 	<title>Sunny Side Up</title>
@@ -41,6 +40,23 @@
 
 	<div id="nav-placeholder">
 	</div>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				/*this.classList.toggle("active");*/
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
 
 </body>
 
