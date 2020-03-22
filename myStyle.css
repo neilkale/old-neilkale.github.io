@@ -31,7 +31,7 @@
 /* For desktop */
 @media screen and (min-width: 700px) {
 	.col-2 {
-		width: auto;
+		width: 75%;
 		margin-left: 20%;
 		overflow: auto;
 		position: absolute;
@@ -160,4 +160,15 @@
 
 p:not(.title){
 	line-height: 30px;
+}
+
+/* Style pdfs in the project */
+.pdf {
+	width: 100%;
+	height: 800px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
