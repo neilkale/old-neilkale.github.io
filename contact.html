@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="page">
+
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="myStyle.css">
+	<title>Contact</title> <!-- TODO -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+	<!-- Favicon Source:
+	https://openclipart.org/detail/22012/weather-symbols:-sun-by-nicubunu -->
+	<script src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery('#nav-placeholder').load("nav.html");
+		});
+	</script>
 </head>
+
 <body>
 
+	<div class=row>
+
+		<!-- Title -->
+
+		<div class=titlebox>
+
+			<p class=title>Contact</p>
+
+			<p class="subtitle">Questions, comments, queries?</p>
+
+			<p class="subtitle">Email me: sunnysideup.life.email@gmail.com</p>
+
+		</div>
+
+	</div>
+
+	<div class=row>
+
+		<!-- The sidebar -->
+
+		<div id="nav-placeholder">
+
+		<div class=col-2></div>
+
+	</div>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				/*this.classList.toggle("active");*/
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
+
 </body>
+
 </html>
